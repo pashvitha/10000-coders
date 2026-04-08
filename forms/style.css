@@ -1,0 +1,17 @@
+div{
+    border:2px solid black;
+    border-radius:0.5rem;
+    background-color:rgba(0, 0, 255, 0.123);
+    text-align: center;
+    
+} 
+
+h2{
+    color:blue
+    
+} 
+
+img{
+    width:10%;
+    padding:10px
+}
