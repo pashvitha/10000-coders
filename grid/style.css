@@ -1,0 +1,33 @@
+#container{
+    display:grid; 
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px;
+    width:50%;
+    
+} 
+
+#container>div{
+    border: 2px solid black;
+    padding:20px; 
+    background-color: aquamarine;
+
+} 
+
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+} 
+
+.content1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+} 
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
