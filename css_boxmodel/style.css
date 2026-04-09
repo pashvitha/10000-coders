@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  width: 50%;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  
+} 
+.header{
+    color: red;
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+
+} 
+
+.content{
+    color: red;
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+
+} 
+
+.footer{
+    color: red;
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+
+}
