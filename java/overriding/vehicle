@@ -1,0 +1,55 @@
+package com.Overriding;
+
+public class vehicle_blc { 
+	public void sound() {
+       System.out.println("The vehicle makes a sound.");
+   }
+
+   public String description() {
+       return "This is a generic vehicle.";
+   }
+
+}
+
+class Car extends vehicle_blc {
+
+   @Override
+   public void sound() {
+       System.out.println("The car honks.");
+   }
+
+   @Override
+   public String description() {
+       return "This is a car with four wheels.";
+   }
+}
+class Motorcycle extends vehicle_blc {
+
+   @Override
+   public void sound() {
+       System.out.println("The motorcycle beeps.");
+   }
+
+   @Override
+   public String description() {
+       return "This is a motorcycle with two wheels.";
+   }
+} 
+
+  //package com.Overriding;
+//
+public class vehicle_elc {
+	 public static void main(String[] args) {
+
+		 vehicle_blc[] vehicles = new vehicle_blc[2];
+
+	        vehicles[0] = new Car();
+	        vehicles[1] = new Motorcycle();
+
+	        for (vehicle_blc v : vehicles) {
+	            v.sound(); // dynamic method dispatch
+	            System.out.println(v.description());
+	            System.out.println();
+	        }
+	    }
+} 
